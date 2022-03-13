@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh">
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Internet Cafe Simulator, initial-scale=1.0">
+    <title>Document</title>
 </head>
-
 <body>
-
-  <div id="app"></div>
+    <div id="app"></div>
 
   <!-- 引入依賴 -->
   <script src="../react/react.development.js"></script>
@@ -23,19 +20,14 @@
           super();
           
           this.state = {
-            messages: "Hello React!",
-            movies: ["雪国列车", "异星灾变", "看见", "泰坦尼克号"]
+            messages: "Hello React!"
           };
         }
 
         render() {
           return (
             <div>
-              <h2>{this.state.messages}</h2>
-              <h1>电影列表</h1>
-              <ul>
-                <li></li>
-              </ul>  
+              <h2>{this.stateme.messages}</h2>  
             </div>
           )
         }
@@ -45,5 +37,4 @@
 
   </script>
 </body>
-
 </html>
