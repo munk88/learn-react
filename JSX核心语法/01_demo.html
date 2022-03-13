@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div id="app"></div>
+
+  <!-- 引入依賴 -->
+  <script src="../react/react.development.js"></script>
+  <script src="../react/react-dom.development.js"></script>
+  <script src="../react/babel.min.js"></script>
+
+  <script type="text/babel">
+      class App extends React.Component {
+        constructor() {
+          super();
+          
+          this.state = {
+            messages: "Hello React!"
+          };
+        }
+
+        render() {
+          return (
+            <div className="app">
+              <h2>{this.stateme.messages}</h2>  
+            </div>
+          )
+        }
+      }
+    
+    ReactDOM.render(<App/>, document.getElementById("app"));
+
+  </script>
+</body>
+
+</html>
