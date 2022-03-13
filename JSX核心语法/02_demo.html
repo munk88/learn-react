@@ -20,16 +20,30 @@
           super();
           
           this.state = {
-            messages: "Hello React!"
+            messages: "Hello React!",
+            counters: 0
           };
         }
 
         render() {
           return (
             <div>
-              <h2>{this.stateme.messages}</h2>  
+              <h2>{this.state.messages}</h2> 
+              <h2>current counter: {this.state.counters}</h2> 
+              <button type="button" onClick={this.increment.bind(this)}>+1</button>
+              <button type="button" onClick={this.decrement.bind(this)}>-1</button>
             </div>
           )
+        }
+        increment() {
+          this.setState({
+            counters: this.state.counters + 1
+          })
+        }
+        decrement() {
+          this.setState({
+            counters: this.state.counters - 1
+          })
         }
       }
     

@@ -34,7 +34,9 @@
               <h2>{this.state.messages}</h2>
               <h1>电影列表</h1>
               <ul>
-                <li></li>
+                {this.state.movies.map((movie, index) => {
+                  return  <li>{index + 1}{movie}</li>
+                })}
               </ul>  
             </div>
           )
